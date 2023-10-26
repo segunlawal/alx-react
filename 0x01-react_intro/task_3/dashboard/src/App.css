@@ -1,0 +1,56 @@
+.App {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App-logo {
+  height: 20vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid red;
+  padding-block: 10px;
+}
+
+.App-header h1 {
+  color: red;
+}
+
+.App-body {
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.App-body label {
+  padding-right: 2px;
+}
+
+.App-body input {
+  margin-left: 10px;
+}
+
+.App-body button {
+  border-radius: 5px;
+  outline: 0;
+  background: white;
+  padding: 2px 8px;
+  border: 1px solid gray;
+}
+
+.App-credentials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.App-footer {
+  margin-top: 100px;
+  border-top: 3px solid red;
+}
+
+.App-footer p {
+  font-style: italic;
+  text-align: center;
+}
