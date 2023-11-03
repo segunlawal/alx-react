@@ -1,0 +1,9 @@
+.App-footer {
+  margin-top: 100px;
+  border-top: 3px solid red;
+}
+
+.App-footer p {
+  font-style: italic;
+  text-align: center;
+}
