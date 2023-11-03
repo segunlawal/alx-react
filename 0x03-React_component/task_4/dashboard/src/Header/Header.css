@@ -1,0 +1,15 @@
+.App-logo {
+  height: 20vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid red;
+  padding-block: 10px;
+}
+
+.App-header h1 {
+  color: red;
+}
