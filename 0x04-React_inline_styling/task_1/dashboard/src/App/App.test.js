@@ -12,10 +12,11 @@ import Header from '../Header/Header';
 import Notifications from '../Notifications/Notifications';
 import CourseList from '../CourseList/CourseList';
 import { getLatestNotification } from '../utils/utils';
-
+import { StyleSheetTestUtils } from 'aphrodite';
 import { TextEncoder, TextDecoder } from 'util';
 
-Object.assign(global, { TextDecoder, TextEncoder });
+global.TextEncoder = TextEncoder;
+global.TextDecoder = TextDecoder;
 
 const listCourses = [
   { id: 1, name: 'ES6', credit: 60 },
@@ -28,6 +29,13 @@ const listNotifications = [
   { id: 2, type: 'urgent', value: 'New resume available' },
   { id: 3, type: 'urgent', html: getLatestNotification() },
 ];
+
+beforeEach(() => {
+  StyleSheetTestUtils.suppressStyleInjection();
+});
+afterEach(() => {
+  StyleSheetTestUtils.clearBufferAndResumeStyleInjection();
+});
 
 describe('App', () => {
   it('renders without crashing', () => {
